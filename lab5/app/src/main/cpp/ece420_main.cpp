@@ -52,13 +52,41 @@ bool lab5PitchShift(float *bufferIn) {
         // findClosestInVector();
         // overlapAndAdd();
         // *********************** START YOUR CODE HERE  **************************** //
+        int P1 = F_S / FREQ_NEW;   // New epoch spacing in samples
+        int i = newEpochIdx; // initializing to present section of buffer after shift
 
+        while (i < 2 * FRAME_SIZE) {
+            // Find the original epoch closest to the new epoch location
+            int nearest_epoch_idx = findClosestInVector(epochLocations,i,0,epochLocations.size());
 
+            // Location in the audio of the closest original epoch
+            int nearest_epoch_loc = epochLocations[nearest_epoch_idx];
 
+            // Need an epoch on either side to calculate P0
+            if (nearest_epoch_idx > 0 && nearest_epoch_idx < epochLocations.size() - 1) {
+                // Determine P0 from the epochs before and after
+                int P0 = (epochLocations[nearest_epoch_idx + 1] - epochLocations[nearest_epoch_idx - 1]) / 2;
 
+                // Create a hanning window of length 2*P0+1)
+                int windowLen = 2 * P0;
 
+                // Extract the epoch to apply window to and apply window
+                std::vector<float> epoch_data(windowLen);
+                for (int j = 0; j < windowLen; j++) {
+                    int source_idx = nearest_epoch_loc - P0 + j;
+                    epoch_data[j] = bufferIn[source_idx] * getHanningCoef(windowLen, j);
+                }
 
+                // Do overlap add
+                overlapAddArray(bufferOut, epoch_data.data(),i - P0,windowLen);
+            }
 
+            // Move to the next epoch
+            i += P1;
+        }
+
+        // Save position of the next epoch
+        newEpochIdx = i;
 
         // ************************ END YOUR CODE HERE  ***************************** //
     }
