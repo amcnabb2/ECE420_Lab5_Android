@@ -1,0 +1,149 @@
+ninja: Entering directory `/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86'
+[1/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/double64.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/double64.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/double64.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/double64.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/double64.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/double64.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/double64.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[2/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/file_io.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/file_io.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/file_io.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/file_io.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/file_io.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/file_io.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/file_io.c:42:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[3/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/interleave.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/interleave.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/interleave.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/interleave.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/interleave.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/interleave.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/interleave.c:19:
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfendian.h:22:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[4/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/command.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/command.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/command.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/command.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/command.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/command.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/command.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[5/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/ima_adpcm.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/ima_adpcm.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/ima_adpcm.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/ima_adpcm.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/ima_adpcm.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ima_adpcm.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ima_adpcm.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[6/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/alaw.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/alaw.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/alaw.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/alaw.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/alaw.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/alaw.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/alaw.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[7/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/gsm610.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/gsm610.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/gsm610.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/gsm610.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/gsm610.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/gsm610.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/gsm610.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[8/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/ms_adpcm.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/ms_adpcm.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/ms_adpcm.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/ms_adpcm.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/ms_adpcm.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ms_adpcm.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ms_adpcm.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[9/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/vox_adpcm.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/vox_adpcm.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/vox_adpcm.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/vox_adpcm.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/vox_adpcm.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/vox_adpcm.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/vox_adpcm.c:32:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[10/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/dither.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/dither.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/dither.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/dither.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/dither.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/dither.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/dither.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[11/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/ulaw.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/ulaw.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/ulaw.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/ulaw.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/ulaw.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ulaw.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/ulaw.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[12/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/strings.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/strings.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/strings.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/strings.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/strings.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/strings.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/strings.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[13/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/pcm.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/pcm.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/pcm.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/pcm.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/pcm.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/pcm.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/pcm.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[14/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/cart.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/cart.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/cart.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/cart.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/cart.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/cart.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/cart.c:21:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[15/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/common.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/common.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/common.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/common.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/common.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/common.c
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/common.c:26:10: fatal error: 'config.h' file not found
+#include <config.h>
+         ^~~~~~~~~~
+1 error generated.
+[16/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/float32.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/float32.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/float32.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/float32.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/float32.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/float32.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/float32.c:19:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[17/198] Building C object libsndfile/CMakeFiles/sndfile.dir/src/dwvw.c.o
+FAILED: libsndfile/CMakeFiles/sndfile.dir/src/dwvw.c.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -D_FILE_OFFSET_BITS=64 -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC -msse2 -std=c99 -MD -MT libsndfile/CMakeFiles/sndfile.dir/src/dwvw.c.o -MF libsndfile/CMakeFiles/sndfile.dir/src/dwvw.c.o.d -o libsndfile/CMakeFiles/sndfile.dir/src/dwvw.c.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/dwvw.c
+In file included from /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/dwvw.c:29:
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h:36:10: fatal error: 'config.h' file not found
+#include "config.h"
+         ^~~~~~~~~~
+1 error generated.
+[18/198] Building CXX object CMakeFiles/echo.dir/ece420_main.cpp.o
+FAILED: CMakeFiles/echo.dir/ece420_main.cpp.o 
+/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Decho_EXPORTS -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=c++11 -Wall -Werror -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/echo.dir/ece420_main.cpp.o -MF CMakeFiles/echo.dir/ece420_main.cpp.o.d -o CMakeFiles/echo.dir/ece420_main.cpp.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp:97:12: error: expected ';' after expression
+    dataBuf
+           ^
+           ;
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp:97:5: error: expression result unused [-Werror,-Wunused-value]
+    dataBuf
+    ^~~~~~~
+2 errors generated.
+ninja: build stopped: subcommand failed.

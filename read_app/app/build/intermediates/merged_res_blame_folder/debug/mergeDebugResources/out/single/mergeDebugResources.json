@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ece420.lab5.app-debug-5:/layout_activity_main.xml.flat",
+        "source": "com.ece420.lab5.app-main-7:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/layout_activity_main.xml.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/menu_menu_main.xml.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/menu/menu_main.xml"
+    },
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-debug-5:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/eonuf/.gradle/daemon/8.7/com.ece420.lab5.app-main-7:/mipmap-xxhdpi/ic_launcher.png"
+    }
+]

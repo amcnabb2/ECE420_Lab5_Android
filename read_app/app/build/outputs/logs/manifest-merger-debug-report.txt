@@ -1,0 +1,91 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:2:1-26:12
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:2:1-26:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/eonuf/.gradle/caches/transforms-4/5732d5fa987b9e6a2aabdb2573eec2b4/transformed/vectordrawable-1.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core-ktx:1.1.0] /home/eonuf/.gradle/caches/transforms-4/8a43d598d8301e5b17a5dd9c5e1112de/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/eonuf/.gradle/caches/transforms-4/7ecb411890184bca57cf6e6577256397/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/eonuf/.gradle/caches/transforms-4/657ec0b6df6f4ff710c4aa3f38d41112/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:3:5-30
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:5:5-87
+	android:name
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:5:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:6:5-96
+	android:name
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:6:22-77
+application
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:7:5-25:19
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:7:5-25:19
+MERGED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/eonuf/.gradle/caches/transforms-4/7ecb411890184bca57cf6e6577256397/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/eonuf/.gradle/caches/transforms-4/7ecb411890184bca57cf6e6577256397/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+	android:screenOrientation
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:14:9-45
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:12:9-41
+	android:fullBackupContent
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:9:9-42
+	android:icon
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:8:9-36
+	android:theme
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:13:9-40
+activity#com.ece420.lab5.MainActivity
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:15:7-24:18
+	android:screenOrientation
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:19:11-47
+	android:label
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:17:11-43
+	android:exported
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:18:11-34
+	android:name
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:16:11-54
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:20:9-23:25
+action#android.intent.action.MAIN
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:21:11-63
+	android:name
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:21:19-60
+category#android.intent.category.LAUNCHER
+ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:22:11-71
+	android:name
+		ADDED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml:22:21-68
+uses-sdk
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/eonuf/.gradle/caches/transforms-4/5732d5fa987b9e6a2aabdb2573eec2b4/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable:1.0.1] /home/eonuf/.gradle/caches/transforms-4/5732d5fa987b9e6a2aabdb2573eec2b4/transformed/vectordrawable-1.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core-ktx:1.1.0] /home/eonuf/.gradle/caches/transforms-4/8a43d598d8301e5b17a5dd9c5e1112de/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /home/eonuf/.gradle/caches/transforms-4/8a43d598d8301e5b17a5dd9c5e1112de/transformed/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/eonuf/.gradle/caches/transforms-4/7ecb411890184bca57cf6e6577256397/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/eonuf/.gradle/caches/transforms-4/7ecb411890184bca57cf6e6577256397/transformed/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/eonuf/.gradle/caches/transforms-4/657ec0b6df6f4ff710c4aa3f38d41112/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/eonuf/.gradle/caches/transforms-4/657ec0b6df6f4ff710c4aa3f38d41112/transformed/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/eonuf/ece420/project/file_read/read_app/app/src/main/AndroidManifest.xml

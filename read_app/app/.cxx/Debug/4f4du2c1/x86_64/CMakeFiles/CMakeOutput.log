@@ -1,0 +1,530 @@
+The target system is: Android - 1 - x86_64
+The host system is: Linux - 7.3.3-200.fc44.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang 
+Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security;
+Id flags: -c;--target=x86_64-none-linux-android28 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+
+The C compiler identification is Clang, found in "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/3.22.1-g37088a8/CompilerIdC/CMakeCCompilerId.o"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ 
+Build flags: -g;-DANDROID;-fdata-sections;-ffunction-sections;-funwind-tables;-fstack-protector-strong;-no-canonical-prefixes;-D_FORTIFY_SOURCE=2;-Wformat;-Werror=format-security;;
+Id flags: -c;--target=x86_64-none-linux-android28 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+
+The CXX compiler identification is Clang, found in "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/3.22.1-g37088a8/CompilerIdCXX/CMakeCXXCompilerId.o"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_e4795 && [1/2] Building C object CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o
+Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Target: x86_64-none-linux-android28
+Thread model: posix
+InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin
+ (in-process)
+ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple x86_64-none-linux-android28 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -resource-dir /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o -x c /home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+End of search list.
+[2/2] Linking C executable cmTC_e4795
+Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Target: x86_64-none-linux-android28
+Thread model: posix
+InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin
+ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_e4795 /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_e4795 && [1/2] Building C object CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Android (10552028  +pgo  +bolt  +lto  -mlgo  based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+  ignore line: [Target: x86_64-none-linux-android28]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple x86_64-none-linux-android28 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -resource-dir /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o -x c /home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking C executable cmTC_e4795]
+  ignore line: [Android (10552028  +pgo  +bolt  +lto  -mlgo  based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+  ignore line: [Target: x86_64-none-linux-android28]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  link line: [ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_e4795 /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+    arg [--sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e4795] ==> ignore
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o] ==> obj [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--build-id=sha1] ==> ignore
+    arg [--no-rosegment] ==> ignore
+    arg [--no-undefined-version] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [CMakeFiles/cmTC_e4795.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o] ==> obj [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+  remove lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  remove lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+  implicit objs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+  implicit dirs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4fca6 && [1/2] Building CXX object CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o
+Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Target: x86_64-none-linux-android28
+Thread model: posix
+InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin
+ (in-process)
+ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple x86_64-none-linux-android28 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -resource-dir /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"
+ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android
+ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
+End of search list.
+[2/2] Linking CXX executable cmTC_4fca6
+Android (10552028, +pgo, +bolt, +lto, -mlgo, based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)
+Target: x86_64-none-linux-android28
+Thread model: posix
+InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin
+ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_4fca6 /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+    add: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  collapse include dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4fca6 && [1/2] Building CXX object CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Android (10552028  +pgo  +bolt  +lto  -mlgo  based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+  ignore line: [Target: x86_64-none-linux-android28]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [ (in-process)]
+  ignore line: [ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple x86_64-none-linux-android28 -emit-obj -mrelax-all -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -target-feature +sse4.2 -target-feature +popcnt -target-feature +cx16 -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debug-info-kind=constructor -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -fcoverage-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -resource-dir /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17 -dependency-file CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include -internal-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 17.0.2 based upon LLVM 17.0.2 default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include"]
+  ignore line: [ignoring nonexistent directory "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/include]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/x86_64-linux-android]
+  ignore line: [ /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [[2/2] Linking CXX executable cmTC_4fca6]
+  ignore line: [Android (10552028  +pgo  +bolt  +lto  -mlgo  based on r487747d) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)]
+  ignore line: [Target: x86_64-none-linux-android28]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  link line: [ "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld" --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z now -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /system/bin/linker64 -o cmTC_4fca6 /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28 -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android -L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --build-id=sha1 --no-rosegment --no-undefined-version --fatal-warnings --no-undefined CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl -lc /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a -l:libunwind.a -ldl /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld] ==> ignore
+    arg [--sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_4fca6] ==> ignore
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o] ==> obj [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+    arg [-L/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--build-id=sha1] ==> ignore
+    arg [--no-rosegment] ==> ignore
+    arg [--no-undefined-version] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [CMakeFiles/cmTC_4fca6.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lc++] ==> lib [c++]
+    arg [-Bdynamic] ==> search dynamic
+    arg [-lm] ==> lib [m]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [-lc] ==> lib [c]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a] ==> lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+    arg [-l:libunwind.a] ==> lib [-l:libunwind.a]
+    arg [-ldl] ==> lib [dl]
+    arg [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o] ==> obj [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+  remove lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  remove lib [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/libclang_rt.builtins-x86_64-android.a]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android]
+  collapse library dir [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl]
+  implicit objs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtbegin_dynamic.o;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/crtend_android.o]
+  implicit dirs: [/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/lib/clang/17/lib/linux/x86_64;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_85f47 && [1/2] Building C object CMakeFiles/cmTC_85f47.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_85f47
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_158c9 && [1/2] Building C object CMakeFiles/cmTC_158c9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_158c9
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_218a8 && [1/2] Building C object CMakeFiles/cmTC_218a8.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_218a8
+
+
+
+Determining size of off_t passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_5febc && [1/2] Building C object CMakeFiles/cmTC_5febc.dir/SIZEOF_OFF_T.c.o
+[2/2] Linking C executable cmTC_5febc
+
+
+
+Determining if the include file byteswap.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4d988 && [1/2] Building C object CMakeFiles/cmTC_4d988.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4d988
+
+
+
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_e8340 && [1/2] Building C object CMakeFiles/cmTC_e8340.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_e8340
+
+
+
+Determining if the include file endian.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_ca835 && [1/2] Building C object CMakeFiles/cmTC_ca835.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_ca835
+
+
+
+Determining if the include file sys/time.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_2952e && [1/2] Building C object CMakeFiles/cmTC_2952e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_2952e
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_3094b && [1/2] Building C object CMakeFiles/cmTC_3094b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3094b
+
+
+
+Determining if the include file immintrin.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_28b7b && [1/2] Building C object CMakeFiles/cmTC_28b7b.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_28b7b
+
+
+
+Determining if the include file locale.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4af72 && [1/2] Building C object CMakeFiles/cmTC_4af72.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4af72
+
+
+
+Determining if the include file sys/wait.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_420b9 && [1/2] Building C object CMakeFiles/cmTC_420b9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_420b9
+
+
+
+Determining size of ssize_t passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_29224 && [1/2] Building C object CMakeFiles/cmTC_29224.dir/SIZEOF_SSIZE_T.c.o
+[2/2] Linking C executable cmTC_29224
+
+
+
+Determining if the function floor exists in the m passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_236e0 && [1/2] Building C object CMakeFiles/cmTC_236e0.dir/CheckFunctionExists.c.o
+/home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: warning: incompatible redeclaration of library function 'floor' [-Wincompatible-library-redeclaration]
+  CHECK_FUNCTION_EXISTS(void);
+  ^
+<command line>:3:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+#define CHECK_FUNCTION_EXISTS floor
+                              ^
+/home/eonuf/Android/Sdk/cmake/3.22.1/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: 'floor' is a builtin with type 'double (double)'
+<command line>:3:31: note: expanded from macro 'CHECK_FUNCTION_EXISTS'
+#define CHECK_FUNCTION_EXISTS floor
+                              ^
+1 warning generated.
+[2/2] Linking C executable cmTC_236e0
+
+
+
+Determining if the function fstat exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_17d11 && [1/2] Building C object CMakeFiles/cmTC_17d11.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_17d11
+
+
+
+Determining if the function fstat64 exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_d88fa && [1/2] Building C object CMakeFiles/cmTC_d88fa.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d88fa
+
+
+
+Determining if the function gettimeofday exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_aa9ee && [1/2] Building C object CMakeFiles/cmTC_aa9ee.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_aa9ee
+
+
+
+Determining if the function gmtime exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4a300 && [1/2] Building C object CMakeFiles/cmTC_4a300.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4a300
+
+
+
+Determining if the function gmtime_r exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_13f84 && [1/2] Building C object CMakeFiles/cmTC_13f84.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_13f84
+
+
+
+Determining if the function localtime exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_53776 && [1/2] Building C object CMakeFiles/cmTC_53776.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_53776
+
+
+
+Determining if the function localtime_r exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_35c77 && [1/2] Building C object CMakeFiles/cmTC_35c77.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_35c77
+
+
+
+Determining if the function lseek exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_9c553 && [1/2] Building C object CMakeFiles/cmTC_9c553.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_9c553
+
+
+
+Determining if the function open exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_1252d && [1/2] Building C object CMakeFiles/cmTC_1252d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1252d
+
+
+
+Determining if the function read exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_d441e && [1/2] Building C object CMakeFiles/cmTC_d441e.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_d441e
+
+
+
+Determining if the function write exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_247d9 && [1/2] Building C object CMakeFiles/cmTC_247d9.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_247d9
+
+
+
+Determining if the function ftruncate exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_8342d && [1/2] Building C object CMakeFiles/cmTC_8342d.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8342d
+
+
+
+Determining if the function fsync exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_1d1ee && [1/2] Building C object CMakeFiles/cmTC_1d1ee.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_1d1ee
+
+
+
+Determining if the function pipe exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_4c593 && [1/2] Building C object CMakeFiles/cmTC_4c593.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_4c593
+
+
+
+Determining if the function setlocale exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_8bb69 && [1/2] Building C object CMakeFiles/cmTC_8bb69.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8bb69
+
+
+
+Determining if the function waitpid exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_c93b8 && [1/2] Building C object CMakeFiles/cmTC_c93b8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c93b8
+
+
+
+Determining if the S_IRGRP exist passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_42c49 && [1/2] Building C object CMakeFiles/cmTC_42c49.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_42c49
+
+
+File /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/stat.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef S_IRGRP
+  return ((int*)(&S_IRGRP))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}

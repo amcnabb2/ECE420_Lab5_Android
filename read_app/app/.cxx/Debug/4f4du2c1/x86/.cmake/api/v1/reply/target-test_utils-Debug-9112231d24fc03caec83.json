@@ -1,0 +1,184 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "libsndfile/libtest_utils.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"add_compile_options",
+			"add_definitions",
+			"include",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"libsndfile/CMakeLists.txt",
+			"libsndfile/cmake/SndFileChecks.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 943,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 950,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 124,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 100,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 5
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 944,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -fno-limit-debug-info  -fPIC"
+				},
+				{
+					"backtrace" : 3,
+					"fragment" : "-msse2"
+				},
+				{
+					"fragment" : "-std=c99"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "_FILE_OFFSET_BITS=64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/src"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/tests"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/include"
+				}
+			],
+			"language" : "C",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "99"
+			},
+			"sourceIndexes" : 
+			[
+				0
+			],
+			"sysroot" : 
+			{
+				"path" : "/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot"
+			}
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "sndfile::@9536000941375528e4fb"
+		}
+	],
+	"folder" : 
+	{
+		"name" : "Tests"
+	},
+	"id" : "test_utils::@9536000941375528e4fb",
+	"name" : "test_utils",
+	"nameOnDisk" : "libtest_utils.a",
+	"paths" : 
+	{
+		"build" : "libsndfile",
+		"source" : "libsndfile"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/tests/utils.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"path" : "libsndfile/tests/utils.def",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

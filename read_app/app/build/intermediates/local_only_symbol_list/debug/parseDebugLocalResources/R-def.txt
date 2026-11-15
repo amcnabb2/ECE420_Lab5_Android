@@ -1,0 +1,27 @@
+R_DEF: Internal format may change without notice
+local
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+id action_settings
+id capture_control_button
+id freqSeekBar
+id get_parameter_button
+id newFreqStatusText
+id statusView
+layout activity_main
+menu menu_main
+mipmap ic_launcher
+string GetParam
+string StartEcho
+string StopEcho
+string action_settings
+string app_name
+string error_no_mic
+string error_no_permission
+string error_player
+string error_recorder
+string init_status
+string prompt_permission
+string status_echoing
+string status_record_perm
+style AppTheme

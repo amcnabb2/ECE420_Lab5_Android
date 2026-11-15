@@ -1,0 +1,8 @@
+com.ece420.lab5.app-core-1.1.0-0 /home/eonuf/.gradle/caches/transforms-4/d8b2669bdd9b3b269f57308319f367b0/transformed/core-1.1.0/res
+com.ece420.lab5.app-pngs-1 /home/eonuf/ece420/project/file_read/read_app/app/build/generated/res/pngs/debug
+com.ece420.lab5.app-resValues-2 /home/eonuf/ece420/project/file_read/read_app/app/build/generated/res/resValues/debug
+com.ece420.lab5.app-packageDebugResources-3 /home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.ece420.lab5.app-packageDebugResources-4 /home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.ece420.lab5.app-debug-5 /home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/merged_res/debug/mergeDebugResources
+com.ece420.lab5.app-debug-6 /home/eonuf/ece420/project/file_read/read_app/app/src/debug/res
+com.ece420.lab5.app-main-7 /home/eonuf/ece420/project/file_read/read_app/app/src/main/res
