@@ -1,0 +1,309 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.6.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "libsndfile",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-libsndfile-Debug-014257fdb622e113a024.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "libsndfile",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"build" : "libsamplerate-0.2.2",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-libsamplerate-0.2.2-Debug-56bf1a17215e6ee6d0d4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1..3.18"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "libsamplerate-0.2.2"
+				},
+				{
+					"build" : "libsamplerate-0.2.2/src",
+					"jsonFile" : "directory-libsamplerate-0.2.2.src-Debug-a80d8be1595080978428.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.1..3.18"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "libsamplerate-0.2.2/src",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "read_app",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "libsndfile",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3
+					],
+					"name" : "libsamplerate",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "echo::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-echo-Debug-49bc8ffe8b8d88190087.json",
+					"name" : "echo",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "generate::@9536000941375528e4fb",
+					"jsonFile" : "target-generate-Debug-097b7c87425cfdc9326c.json",
+					"name" : "generate",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "list_formats::@9536000941375528e4fb",
+					"jsonFile" : "target-list_formats-Debug-9a718969e1614ef90615.json",
+					"name" : "list_formats",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "make_sine::@9536000941375528e4fb",
+					"jsonFile" : "target-make_sine-Debug-7d69dfd179b3cda60ea7.json",
+					"name" : "make_sine",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "samplerate::@606b662e772a78214d25",
+					"jsonFile" : "target-samplerate-Debug-256f2ac5dbe0a24edff6.json",
+					"name" : "samplerate",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sfprocess::@9536000941375528e4fb",
+					"jsonFile" : "target-sfprocess-Debug-6a80575933abd8f11eda.json",
+					"name" : "sfprocess",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-Debug-09e99975d3942b39c0d5.json",
+					"name" : "sndfile",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-cmp::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-cmp-Debug-56bd76d118941f1412bb.json",
+					"name" : "sndfile-cmp",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-concat::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-concat-Debug-530192bbe47bbe57f729.json",
+					"name" : "sndfile-concat",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-convert::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-convert-Debug-256136f5c8a46b7beaa3.json",
+					"name" : "sndfile-convert",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-deinterleave::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-deinterleave-Debug-398a3bf1f2096d94601b.json",
+					"name" : "sndfile-deinterleave",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-info::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-info-Debug-0095d7857ac79de84b79.json",
+					"name" : "sndfile-info",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-interleave::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-interleave-Debug-4916c14b693426cbbb83.json",
+					"name" : "sndfile-interleave",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-loopify::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-loopify-Debug-74dc2d29cb0d292775c0.json",
+					"name" : "sndfile-loopify",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-metadata-get::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-metadata-get-Debug-92a021ba059eaa934df5.json",
+					"name" : "sndfile-metadata-get",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-metadata-set::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-metadata-set-Debug-8e52bd2ed909ea3a22ef.json",
+					"name" : "sndfile-metadata-set",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-play::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-play-Debug-9cbf3c4c21fe144b047a.json",
+					"name" : "sndfile-play",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-salvage::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-salvage-Debug-edf6c51a471465d2c267.json",
+					"name" : "sndfile-salvage",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfile-to-text::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfile-to-text-Debug-624e1598541ded3a66e0.json",
+					"name" : "sndfile-to-text",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "sndfilehandle::@9536000941375528e4fb",
+					"jsonFile" : "target-sndfilehandle-Debug-f6386994a582da9fcd50.json",
+					"name" : "sndfilehandle",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64",
+		"source" : "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

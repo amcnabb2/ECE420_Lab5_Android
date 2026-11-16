@@ -11,5 +11,6 @@
 #include "debug_utils.h"
 
 void ece420ProcessFrame(sample_buf *dataBuf);
+void close_file();
 
 #endif //ECE420_MAIN_H

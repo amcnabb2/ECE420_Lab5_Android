@@ -1,2 +1,9 @@
 ninja: Entering directory `/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64'
-ninja: no work to do.
+[1/8] Building C object CMakeFiles/echo.dir/kiss_fft/kiss_fft.c.o
+[2/8] Building CXX object CMakeFiles/echo.dir/audio_player.cpp.o
+[3/8] Building CXX object CMakeFiles/echo.dir/audio_common.cpp.o
+[4/8] Building CXX object CMakeFiles/echo.dir/ece420_main.cpp.o
+[5/8] Building CXX object CMakeFiles/echo.dir/debug_utils.cpp.o
+[6/8] Building CXX object CMakeFiles/echo.dir/ece420_lib.cpp.o
+[7/8] Building CXX object CMakeFiles/echo.dir/audio_main.cpp.o
+[8/8] Linking CXX shared library /home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/x86_64/libecho.so

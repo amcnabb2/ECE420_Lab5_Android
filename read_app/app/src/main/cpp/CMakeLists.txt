@@ -17,6 +17,10 @@ add_subdirectory(libsndfile)
 set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
 add_subdirectory(libsamplerate-0.2.2)
 
+target_include_directories(echo PRIVATE
+                           libsamplerate-0.2.2/include
+                           libsndfile/include)
+
 # include libraries needed for echo lib
 target_link_libraries(echo
                       android

@@ -4,7 +4,6 @@
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/config.h.cmake
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/CMakeLists.txt
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/CMakeLists.txt
-/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CMakeAutoGen.cmake
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CheckCPUArch.cmake
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/FindFLAC.cmake
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/FindOgg.cmake

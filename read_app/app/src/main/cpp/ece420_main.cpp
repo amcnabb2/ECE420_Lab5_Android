@@ -70,15 +70,34 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
         }
     }
 
-    // Data is encoded in signed PCM-16, little-endian, mono
-    int16_t readdata[FRAME_SIZE*MAX_CHANNELS]; // can hold FRAME_LENGTH samples of multiple channels
-    int16_t monodata[FRAME_SIZE] = {0}; // will hold mono-summed audio
+    const int FILE_FRAME_SIZE = (int) (FRAME_SIZE * 44.1 / 48); // to account for 44.1kHz input file
 
-    readcount = sf_readf_short(infile, readdata, FRAME_SIZE);
-    process_data(readdata, monodata, readcount*sfinfo.channels, sfinfo.channels);
+
+    // Data is encoded in signed PCM-16, little-endian, mono
+    int16_t readdata[FILE_FRAME_SIZE*MAX_CHANNELS]; // can hold FRAME_LENGTH samples of multiple channels
+    int16_t monodata[FILE_FRAME_SIZE] = {0}; // will hold mono-summed audio
+
+    readcount = sf_readf_short(infile, readdata, FILE_FRAME_SIZE);
+    process_data(readdata, monodata, readcount, sfinfo.channels);
+
+    float resampled_data[FRAME_SIZE];
+    float mono_float[FILE_FRAME_SIZE];
+    src_short_to_float_array(monodata, mono_float, FILE_FRAME_SIZE); // TODO: Change to just read to float to begin with
+
+    SRC_DATA src_data;
+    src_data.data_in = mono_float;
+    src_data.data_out = resampled_data;
+    src_data.input_frames = FILE_FRAME_SIZE;
+    src_data.output_frames = FRAME_SIZE;
+    src_data.src_ratio = 48.0e3 / 44.1e3;
+
+    src_simple(&src_data,SRC_LINEAR,1); // Note: even the fastest sinc version is too slow
+
+    int16_t mono_48k[FRAME_SIZE];
+    src_float_to_short_array(resampled_data,mono_48k,FRAME_SIZE);
 
     for (int i = 0; i < FRAME_SIZE; i++) {
-        int16_t newVal = (int16_t) monodata[i];
+        int16_t newVal = (int16_t) mono_48k[i];
 
         uint8_t lowByte = (uint8_t) (0x00ff & newVal);
         uint8_t highByte = (uint8_t) ((0xff00 & newVal) >> 8);
@@ -93,7 +112,7 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
 
     // Finally, put in our new data.
     for (int i = 0; i < FRAME_SIZE; i++) {
-        bufferIn[i + 2 * FRAME_SIZE - 1] = (float) monodata[i];
+        bufferIn[i + 2 * FRAME_SIZE - 1] = (float) resampled_data[i];
     }
 
     // Very last thing, update your output circular buffer!
@@ -109,34 +128,37 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
     LOGD("Time delay: %ld us",  ((end.tv_sec * 1000000 + end.tv_usec) - (start.tv_sec * 1000000 + start.tv_usec)));
 }
 
-//static void process_data (int16_t *datain, int16_t *dataout, int count, int channels)
-//{
-//    int k;
-//    int framesum = 0;
-//
-//    // convert to mono
-//    for (int i = 0 ; i < count; i++){
-//        framesum += datain[i] / channels;
-//        k = i%channels;
-//        if (k == channels-1){ // all channels have been read
-//            dataout[i/(channels)] = (int16_t) (PCT_GAIN * framesum); // put summation in matching position in dataout; PCT_GAIN/100 converts from percentage to scaling value
-//            framesum = 0;
-//        }
-//    }
-//} /* process_data */
-
-static void process_data(int16_t *datain, int16_t *dataout, int frame_count, int channels)
+static void process_data (int16_t *datain, int16_t *dataout, int count, int channels)
 {
-    if (channels <= 0 || datain == NULL || dataout == NULL) return;
+    long framesum = 0;
 
-    for (int f = 0; f < frame_count; f++) {
-        int32_t framesum = 0;
-        for (int c = 0; c < channels; c++) {
-            framesum += datain[f * channels + c];
+    // convert to mono
+    for (int i = 0 ; i < count; i++){ // frames
+        for (int c = 0 ; c < channels; c++) { // channels in frame
+            framesum += datain[i*channels + c];
         }
-        int32_t avg = framesum / channels;
-        dataout[f] = (int16_t)(PCT_GAIN * avg); // Correct mono conversion & gain
+        dataout[i] = framesum / channels;
+        framesum = 0;
     }
+} /* process_data */
+
+//static void process_data(int16_t *datain, int16_t *dataout, int frame_count, int channels)
+//{
+//    if (channels <= 0 || datain == NULL || dataout == NULL) return;
+//
+//    for (int f = 0; f < frame_count; f++) {
+//        int32_t framesum = 0;
+//        for (int c = 0; c < channels; c++) {
+//            framesum += datain[f * channels + c];
+//        }
+//        int32_t avg = framesum / channels;
+//        dataout[f] = (int16_t)(PCT_GAIN * avg); // Correct mono conversion & gain
+//    }
+//}
+
+void close_file(){
+    sf_close(infile);
+    isOpen = false;
 }
 
 void overlapAddArray(float *dest, float *src, int startIdx, int len) {

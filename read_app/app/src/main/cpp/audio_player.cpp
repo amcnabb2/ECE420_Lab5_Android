@@ -225,6 +225,8 @@ void AudioPlayer::Stop(void) {
 
     std::lock_guard<std::mutex> lock(stopMutex_);
 
+    close_file();
+
     result = (*playItf_)->SetPlayState(playItf_, SL_PLAYSTATE_STOPPED);
     SLASSERT(result);
     (*playBufferQueueItf_)->Clear(playBufferQueueItf_);

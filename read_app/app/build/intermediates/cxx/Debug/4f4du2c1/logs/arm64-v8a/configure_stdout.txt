@@ -10,7 +10,6 @@
 -- Could NOT find SQLite3 (missing: SQLite3_INCLUDE_DIR SQLite3_LIBRARY) 
 -- The following features have been enabled:
 
- * BUILD_TESTING, build tests
  * ENABLE_CPACK, enable CPack support
  * ENABLE_PACKAGE_CONFIG, generate and install package config file
  * INSTALL_PKGCONFIG_MODULE, generate and install pkg-config module
@@ -22,6 +21,7 @@
  * ENABLE_EXTERNAL_LIBS, enable FLAC, Vorbis, and Opus codecs
  * ENABLE_MPEG, enable MPEG audio (including mp3) codecs
  * ENABLE_EXPERIMENTAL, enable experimental code
+ * BUILD_TESTING, build tests
  * BUILD_REGTEST, build regtest
 
 -- The following OPTIONAL packages have not been found:
@@ -46,13 +46,8 @@
  * mpg123 (required version >= 1.25.10), MPEG Audio Layer I/II/III decoder, <https://www.mpg123.de/>
    Enables MPEG Audio reading support
 
--- Looking for stdbool.h
--- Looking for stdbool.h - found
--- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1") 
 -- Checking processor clipping capabilities...
 -- Checking processor clipping capabilities... disabled
--- Performing Test HAVE_VISIBILITY
--- Performing Test HAVE_VISIBILITY - Success
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a

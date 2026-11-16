@@ -6,7 +6,6 @@
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/config.h.cmake",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/CMakeLists.txt",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/CMakeLists.txt",
-    "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CMakeAutoGen.cmake",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CheckCPUArch.cmake",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/FindFLAC.cmake",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/FindOgg.cmake",
@@ -38,15 +37,10 @@
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
-    "ContinuousUpdate::@9536000941375528e4fb": {
-      "artifactName": "ContinuousUpdate",
+    "sndfile-to-text::@9536000941375528e4fb": {
+      "artifactName": "sndfile-to-text",
       "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "error_test::@9536000941375528e4fb": {
-      "artifactName": "error_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/error_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-to-text",
       "runtimeFiles": []
     },
     "sndfile-salvage::@9536000941375528e4fb": {
@@ -55,274 +49,16 @@
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-salvage",
       "runtimeFiles": []
     },
-    "ContinuousStart::@9536000941375528e4fb": {
-      "artifactName": "ContinuousStart",
+    "sndfile-concat::@9536000941375528e4fb": {
+      "artifactName": "sndfile-concat",
       "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyMemoryCheck::@9536000941375528e4fb": {
-      "artifactName": "NightlyMemoryCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyUpdate::@9536000941375528e4fb": {
-      "artifactName": "NightlyUpdate",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "rdwr_test::@9536000941375528e4fb": {
-      "artifactName": "rdwr_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/rdwr_test",
-      "runtimeFiles": []
-    },
-    "ExperimentalTest::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "mpeg_test::@9536000941375528e4fb": {
-      "artifactName": "mpeg_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/mpeg_test",
-      "runtimeFiles": []
-    },
-    "multi_file_test::@9536000941375528e4fb": {
-      "artifactName": "multi_file_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/multi_file_test",
-      "runtimeFiles": []
-    },
-    "NightlyTest::@9536000941375528e4fb": {
-      "artifactName": "NightlyTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "NightlyStart::@9536000941375528e4fb": {
-      "artifactName": "NightlyStart",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "sndfile-metadata-get::@9536000941375528e4fb": {
-      "artifactName": "sndfile-metadata-get",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-metadata-get",
-      "runtimeFiles": []
-    },
-    "ContinuousConfigure::@9536000941375528e4fb": {
-      "artifactName": "ContinuousConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "stdio_test::@9536000941375528e4fb": {
-      "artifactName": "stdio_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/stdio_test",
-      "runtimeFiles": []
-    },
-    "floating_point_test::@9536000941375528e4fb": {
-      "artifactName": "floating_point_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/floating_point_test",
-      "runtimeFiles": []
-    },
-    "NightlyBuild::@9536000941375528e4fb": {
-      "artifactName": "NightlyBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "aiff_rw_test::@9536000941375528e4fb": {
-      "artifactName": "aiff_rw_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/aiff_rw_test",
-      "runtimeFiles": []
-    },
-    "peak_chunk_test::@9536000941375528e4fb": {
-      "artifactName": "peak_chunk_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/peak_chunk_test",
-      "runtimeFiles": []
-    },
-    "ogg_opus_test::@9536000941375528e4fb": {
-      "artifactName": "ogg_opus_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/ogg_opus_test",
-      "runtimeFiles": []
-    },
-    "stdout_test::@9536000941375528e4fb": {
-      "artifactName": "stdout_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/tests/stdout_test",
-      "runtimeFiles": []
-    },
-    "pcm_test::@9536000941375528e4fb": {
-      "artifactName": "pcm_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/pcm_test",
-      "runtimeFiles": []
-    },
-    "sndfile-interleave::@9536000941375528e4fb": {
-      "artifactName": "sndfile-interleave",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-interleave",
-      "runtimeFiles": []
-    },
-    "Nightly::@9536000941375528e4fb": {
-      "artifactName": "Nightly",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "lossy_comp_test::@9536000941375528e4fb": {
-      "artifactName": "lossy_comp_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/lossy_comp_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-concat",
       "runtimeFiles": []
     },
     "sndfilehandle::@9536000941375528e4fb": {
       "artifactName": "sndfilehandle",
       "abi": "arm64-v8a",
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfilehandle",
-      "runtimeFiles": []
-    },
-    "locale_test::@9536000941375528e4fb": {
-      "artifactName": "locale_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/locale_test",
-      "runtimeFiles": []
-    },
-    "ExperimentalSubmit::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalSubmit",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "channel_test::@9536000941375528e4fb": {
-      "artifactName": "channel_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/channel_test",
-      "runtimeFiles": []
-    },
-    "external_libs_test::@9536000941375528e4fb": {
-      "artifactName": "external_libs_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/external_libs_test",
-      "runtimeFiles": []
-    },
-    "sfversion::@9536000941375528e4fb": {
-      "artifactName": "sfversion",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sfversion",
-      "runtimeFiles": []
-    },
-    "samplerate::@606b662e772a78214d25": {
-      "artifactName": "samplerate",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsamplerate-0.2.2/src/libsamplerate.a",
-      "runtimeFiles": []
-    },
-    "sndfile-metadata-set::@9536000941375528e4fb": {
-      "artifactName": "sndfile-metadata-set",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-metadata-set",
-      "runtimeFiles": []
-    },
-    "ContinuousTest::@9536000941375528e4fb": {
-      "artifactName": "ContinuousTest",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ogg_test::@9536000941375528e4fb": {
-      "artifactName": "ogg_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/ogg_test",
-      "runtimeFiles": []
-    },
-    "test_utils::@9536000941375528e4fb": {
-      "artifactName": "test_utils",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/libtest_utils.a",
-      "runtimeFiles": []
-    },
-    "Experimental::@9536000941375528e4fb": {
-      "artifactName": "Experimental",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "generate::@9536000941375528e4fb": {
-      "artifactName": "generate",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/generate",
-      "runtimeFiles": []
-    },
-    "sndfile::@9536000941375528e4fb": {
-      "artifactName": "sndfile",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/libsndfile.a",
-      "runtimeFiles": []
-    },
-    "ExperimentalBuild::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ContinuousBuild::@9536000941375528e4fb": {
-      "artifactName": "ContinuousBuild",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "virtual_io_test::@9536000941375528e4fb": {
-      "artifactName": "virtual_io_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/virtual_io_test",
-      "runtimeFiles": []
-    },
-    "ContinuousMemCheck::@9536000941375528e4fb": {
-      "artifactName": "ContinuousMemCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "list_formats::@9536000941375528e4fb": {
-      "artifactName": "list_formats",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/list_formats",
-      "runtimeFiles": []
-    },
-    "sndfile-cmp::@9536000941375528e4fb": {
-      "artifactName": "sndfile-cmp",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-cmp",
-      "runtimeFiles": []
-    },
-    "sndfile-to-text::@9536000941375528e4fb": {
-      "artifactName": "sndfile-to-text",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-to-text",
-      "runtimeFiles": []
-    },
-    "ExperimentalCoverage::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalCoverage",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "alaw_test::@9536000941375528e4fb": {
-      "artifactName": "alaw_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/alaw_test",
-      "runtimeFiles": []
-    },
-    "ExperimentalStart::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalStart",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ExperimentalMemCheck::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalMemCheck",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "g72x_test::@9536000941375528e4fb": {
-      "artifactName": "g72x_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/g72x_test",
       "runtimeFiles": []
     },
     "sfprocess::@9536000941375528e4fb": {
@@ -337,12 +73,6 @@
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/make_sine",
       "runtimeFiles": []
     },
-    "cpp_test::@9536000941375528e4fb": {
-      "artifactName": "cpp_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/cpp_test",
-      "runtimeFiles": []
-    },
     "sndfile-deinterleave::@9536000941375528e4fb": {
       "artifactName": "sndfile-deinterleave",
       "abi": "arm64-v8a",
@@ -355,15 +85,10 @@
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-play",
       "runtimeFiles": []
     },
-    "NightlySubmit::@9536000941375528e4fb": {
-      "artifactName": "NightlySubmit",
+    "samplerate::@606b662e772a78214d25": {
+      "artifactName": "samplerate",
       "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "write_read_test::@9536000941375528e4fb": {
-      "artifactName": "write_read_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/write_read_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsamplerate-0.2.2/src/libsamplerate.a",
       "runtimeFiles": []
     },
     "sndfile-loopify::@9536000941375528e4fb": {
@@ -372,10 +97,10 @@
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-loopify",
       "runtimeFiles": []
     },
-    "scale_clip_test::@9536000941375528e4fb": {
-      "artifactName": "scale_clip_test",
+    "sndfile-metadata-set::@9536000941375528e4fb": {
+      "artifactName": "sndfile-metadata-set",
       "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/scale_clip_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-metadata-set",
       "runtimeFiles": []
     },
     "sndfile-convert::@9536000941375528e4fb": {
@@ -396,146 +121,40 @@
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-info",
       "runtimeFiles": []
     },
-    "ContinuousCoverage::@9536000941375528e4fb": {
-      "artifactName": "ContinuousCoverage",
+    "sndfile-metadata-get::@9536000941375528e4fb": {
+      "artifactName": "sndfile-metadata-get",
       "abi": "arm64-v8a",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-metadata-get",
       "runtimeFiles": []
     },
-    "ContinuousSubmit::@9536000941375528e4fb": {
-      "artifactName": "ContinuousSubmit",
+    "generate::@9536000941375528e4fb": {
+      "artifactName": "generate",
       "abi": "arm64-v8a",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/generate",
       "runtimeFiles": []
     },
-    "long_read_write_test::@9536000941375528e4fb": {
-      "artifactName": "long_read_write_test",
+    "sndfile::@9536000941375528e4fb": {
+      "artifactName": "sndfile",
       "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/long_read_write_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/libsndfile.a",
       "runtimeFiles": []
     },
-    "NightlyConfigure::@9536000941375528e4fb": {
-      "artifactName": "NightlyConfigure",
+    "list_formats::@9536000941375528e4fb": {
+      "artifactName": "list_formats",
       "abi": "arm64-v8a",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/list_formats",
       "runtimeFiles": []
     },
-    "header_test::@9536000941375528e4fb": {
-      "artifactName": "header_test",
+    "sndfile-interleave::@9536000941375528e4fb": {
+      "artifactName": "sndfile-interleave",
       "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/header_test",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-interleave",
       "runtimeFiles": []
     },
-    "NightlyCoverage::@9536000941375528e4fb": {
-      "artifactName": "NightlyCoverage",
+    "sndfile-cmp::@9536000941375528e4fb": {
+      "artifactName": "sndfile-cmp",
       "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "compression_size_test::@9536000941375528e4fb": {
-      "artifactName": "compression_size_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/compression_size_test",
-      "runtimeFiles": []
-    },
-    "test_main::@9536000941375528e4fb": {
-      "artifactName": "test_main",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/test_main",
-      "runtimeFiles": []
-    },
-    "command_test::@9536000941375528e4fb": {
-      "artifactName": "command_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/command_test",
-      "runtimeFiles": []
-    },
-    "sndfile-concat::@9536000941375528e4fb": {
-      "artifactName": "sndfile-concat",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-concat",
-      "runtimeFiles": []
-    },
-    "raw_test::@9536000941375528e4fb": {
-      "artifactName": "raw_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/raw_test",
-      "runtimeFiles": []
-    },
-    "stdin_test::@9536000941375528e4fb": {
-      "artifactName": "stdin_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/tests/stdin_test",
-      "runtimeFiles": []
-    },
-    "ExperimentalConfigure::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalConfigure",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "chunk_test::@9536000941375528e4fb": {
-      "artifactName": "chunk_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/chunk_test",
-      "runtimeFiles": []
-    },
-    "headerless_test::@9536000941375528e4fb": {
-      "artifactName": "headerless_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/headerless_test",
-      "runtimeFiles": []
-    },
-    "misc_test::@9536000941375528e4fb": {
-      "artifactName": "misc_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/misc_test",
-      "runtimeFiles": []
-    },
-    "ExperimentalUpdate::@9536000941375528e4fb": {
-      "artifactName": "ExperimentalUpdate",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "checksum_test::@9536000941375528e4fb": {
-      "artifactName": "checksum_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/checksum_test",
-      "runtimeFiles": []
-    },
-    "pipe_test::@9536000941375528e4fb": {
-      "artifactName": "pipe_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/pipe_test",
-      "runtimeFiles": []
-    },
-    "string_test::@9536000941375528e4fb": {
-      "artifactName": "string_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/string_test",
-      "runtimeFiles": []
-    },
-    "Continuous::@9536000941375528e4fb": {
-      "artifactName": "Continuous",
-      "abi": "arm64-v8a",
-      "runtimeFiles": []
-    },
-    "ulaw_test::@9536000941375528e4fb": {
-      "artifactName": "ulaw_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/ulaw_test",
-      "runtimeFiles": []
-    },
-    "dwvw_test::@9536000941375528e4fb": {
-      "artifactName": "dwvw_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/dwvw_test",
-      "runtimeFiles": []
-    },
-    "format_check_test::@9536000941375528e4fb": {
-      "artifactName": "format_check_test",
-      "abi": "arm64-v8a",
-      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/format_check_test",
-      "runtimeFiles": []
-    },
-    "NightlyMemCheck::@9536000941375528e4fb": {
-      "artifactName": "NightlyMemCheck",
-      "abi": "arm64-v8a",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/arm64-v8a/sndfile-cmp",
       "runtimeFiles": []
     }
   }
