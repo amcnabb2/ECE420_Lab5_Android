@@ -1,6 +1,10 @@
 {
   "buildFiles": [
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/CMakeLists.txt",
+    "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/CMakeLists.txt",
+    "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/cmake/ClipMode.cmake",
+    "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/config.h.cmake",
+    "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/CMakeLists.txt",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/CMakeLists.txt",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CMakeAutoGen.cmake",
     "/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/cmake/CheckCPUArch.cmake",
@@ -207,6 +211,12 @@
       "artifactName": "sfversion",
       "abi": "x86_64",
       "output": "/home/eonuf/ece420/project/file_read/read_app/app/build/intermediates/cxx/Debug/4f4du2c1/obj/x86_64/sfversion",
+      "runtimeFiles": []
+    },
+    "samplerate::@606b662e772a78214d25": {
+      "artifactName": "samplerate",
+      "abi": "x86_64",
+      "output": "/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/libsamplerate-0.2.2/src/libsamplerate.a",
       "runtimeFiles": []
     },
     "sndfile-metadata-set::@9536000941375528e4fb": {

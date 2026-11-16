@@ -1,13 +1,2 @@
 ninja: Entering directory `/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/armeabi-v7a'
-[1/2] Building CXX object CMakeFiles/echo.dir/ece420_main.cpp.o
-FAILED: CMakeFiles/echo.dir/ece420_main.cpp.o 
-/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Decho_EXPORTS -I/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/include -I/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/armeabi-v7a/libsndfile/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -std=c++11 -Wall -Werror -fno-limit-debug-info  -fPIC -MD -MT CMakeFiles/echo.dir/ece420_main.cpp.o -MF CMakeFiles/echo.dir/ece420_main.cpp.o.d -o CMakeFiles/echo.dir/ece420_main.cpp.o -c /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp
-/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp:97:12: error: expected ';' after expression
-    dataBuf
-           ^
-           ;
-/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/ece420_main.cpp:97:5: error: expression result unused [-Werror,-Wunused-value]
-    dataBuf
-    ^~~~~~~
-2 errors generated.
-ninja: build stopped: subcommand failed.
+ninja: no work to do.

@@ -15,6 +15,7 @@
  */
 #include <cstdlib>
 #include "audio_player.h"
+#include "ece420_main.h"
 
 /*
  * Called by OpenSL SimpleBufferQueue for every audio buffer played
@@ -34,18 +35,18 @@ void AudioPlayer::ProcessSLCallback(SLAndroidSimpleBufferQueueItf bq) {
 #ifdef ENABLE_LOG
     logFile_->logTime();
 #endif
-  std::lock_guard<std::mutex> lock(stopMutex_);
+    std::lock_guard<std::mutex> lock(stopMutex_);
 
     // retrieve the finished device buf and put onto the free queue
     // so recorder could re-use it
-    sample_buf *buf;
-    if(!devShadowQueue_->front(&buf)) {
+    sample_buf *buf = nullptr;
+    if (!devShadowQueue_->front(&buf)) {
         /*
          * This should not happen: we got a callback,
          * but we have no buffer in deviceShadowedQueue
          * we lost buffers this way...(ERROR)
          */
-        if(callback_) {
+        if (callback_) {
             uint32_t count;
             callback_(ctx_, ENGINE_SERVICE_MSG_RETRIEVE_DUMP_BUFS, &count);
         }
@@ -53,42 +54,34 @@ void AudioPlayer::ProcessSLCallback(SLAndroidSimpleBufferQueueItf bq) {
     }
     devShadowQueue_->pop();
 
-    if( buf != &silentBuf_) {
+    if (buf != &silentBuf_) {
         buf->size_ = 0;
         freeQueue_->push(buf);
-
-        if (!playQueue_->front(&buf)) {
-#ifdef ENABLE_LOG
-          logFile->log("%s", "====Warning: running out of the Audio buffers")
-#endif
-          return;
-        }
-
-      devShadowQueue_->push(buf);
-      (*bq)->Enqueue(bq, buf->buf_, buf->size_);
-      playQueue_->pop();
-      return;
     }
 
-    if (playQueue_->size() < PLAY_KICKSTART_BUFFER_COUNT) {
-        (*bq)->Enqueue(bq, buf->buf_, buf->size_);
-        devShadowQueue_->push(&silentBuf_);
+    if (!freeQueue_->front(&buf)) {
+#ifdef ENABLE_LOG
+        logFile->log("%s", "====Warning: running out of the Audio buffers")
+#endif
         return;
     }
 
-    assert(PLAY_KICKSTART_BUFFER_COUNT <=
-           (DEVICE_SHADOW_BUFFER_QUEUE_LEN - devShadowQueue_->size()));
-    for (int32_t idx = 0; idx < PLAY_KICKSTART_BUFFER_COUNT; idx++) {
-        playQueue_->front(&buf);
-        playQueue_->pop();
-        devShadowQueue_->push(buf);
-        (*bq)->Enqueue(bq, buf->buf_, buf->size_);
-    }
 
+    sample_buf *newBuf = nullptr;
+    if (freeQueue_->front(&newBuf)) {
+        freeQueue_->pop();
+        newBuf->size_ = newBuf->cap_;
+
+        ece420ProcessFrame(newBuf);
+
+        devShadowQueue_->push(newBuf);
+        (*bq)->Enqueue(bq, newBuf->buf_, newBuf->size_);
+    }
 }
 
+
 AudioPlayer::AudioPlayer(SampleFormat *sampleFormat, SLEngineItf slEngine) :
-    freeQueue_(nullptr), playQueue_(nullptr), devShadowQueue_(nullptr),
+    freeQueue_(nullptr), devShadowQueue_(nullptr),
     callback_(nullptr)
 {
     SLresult result;
@@ -178,12 +171,6 @@ AudioPlayer::~AudioPlayer() {
     }
     delete devShadowQueue_;
 
-    while(playQueue_->front(&buf)) {
-      buf->size_ = 0;
-      playQueue_->pop();
-      freeQueue_->push(buf);
-    }
-
     // destroy output mix object, and invalidate all associated interfaces
     if (outputMixObjectItf_) {
         (*outputMixObjectItf_)->Destroy(outputMixObjectItf_);
@@ -192,8 +179,7 @@ AudioPlayer::~AudioPlayer() {
     delete [] silentBuf_.buf_;
 }
 
-void AudioPlayer::SetBufQueue(AudioQueue *playQ, AudioQueue *freeQ) {
-    playQueue_ = playQ;
+void AudioPlayer::SetBufQueue(AudioQueue *freeQ) {
     freeQueue_ = freeQ;
 }
 
@@ -209,12 +195,19 @@ SLresult AudioPlayer::Start(void) {
 
     result = (*playItf_)->SetPlayState(playItf_, SL_PLAYSTATE_STOPPED);
     SLASSERT(result);
+    (*playBufferQueueItf_)->Clear(playBufferQueueItf_);
 
-    result = (*playBufferQueueItf_)->Enqueue(playBufferQueueItf_,
-                                             silentBuf_.buf_,
-                                             silentBuf_.size_);
-    SLASSERT(result);
-    devShadowQueue_->push(&silentBuf_);
+    for (int i = 0; i < PLAY_KICKSTART_BUFFER_COUNT; i++) {
+        sample_buf *buf = nullptr;
+        if (freeQueue_->front(&buf)) {
+            freeQueue_->pop();
+            buf->size_ = buf->cap_;
+            ece420ProcessFrame(buf);
+            devShadowQueue_->push(buf);
+            result = (*playBufferQueueItf_)->Enqueue(playBufferQueueItf_, buf->buf_, buf->size_);
+            SLASSERT(result);
+        }
+    }
 
     result = (*playItf_)->SetPlayState(playItf_, SL_PLAYSTATE_PLAYING);
     SLASSERT(result);

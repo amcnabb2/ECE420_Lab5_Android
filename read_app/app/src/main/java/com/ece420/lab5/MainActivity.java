@@ -73,10 +73,8 @@ public class MainActivity extends Activity
         queryNativeAudioParameters();
         // initialize native audio system
         updateNativeAudioUI();
-        if (supportRecording) {
-            // Native Setting: 48k Hz Sampling Frequency and 128 Frame Size
-            createSLEngine(Integer.parseInt(nativeSampleRate), FRAME_SIZE);
-        }
+        // Native Setting: 48k Hz Sampling Frequency and 128 Frame Size
+        createSLEngine(Integer.parseInt(nativeSampleRate), FRAME_SIZE);
 
         // Setup UI
         freq_status_view = (TextView) findViewById(R.id.newFreqStatusText);
@@ -97,7 +95,7 @@ public class MainActivity extends Activity
             public void onStartTrackingTouch(SeekBar seekBar) {}
             public void onStopTrackingTouch(SeekBar seekBar) {}
         });
-        copyAssetToInternalStorage("diamonds.flac");
+        copyAssetToInternalStorage("bluesette.wav");
     }
     @Override
     protected void onDestroy() {
@@ -134,25 +132,16 @@ public class MainActivity extends Activity
     }
 
     private void startEcho() {
-        if(!supportRecording){
-            return;
-        }
         if (!isPlaying) {
             if(!createSLBufferQueueAudioPlayer()) {
                 statusView.setText(getString(R.string.error_player));
                 return;
             }
-            if(!createAudioRecorder()) {
-                deleteSLBufferQueueAudioPlayer();
-                statusView.setText(getString(R.string.error_recorder));
-                return;
-            }
-            startPlay();   // this must include startRecording()
-            statusView.setText(getString(R.string.status_echoing));
+            startPlay();
+            statusView.setText("Playback initiated.");
         } else {
-            stopPlay();  //this must include stopRecording()
+            stopPlay();
             updateNativeAudioUI();
-            deleteAudioRecorder();
             deleteSLBufferQueueAudioPlayer();
         }
         isPlaying = !isPlaying;
@@ -161,16 +150,7 @@ public class MainActivity extends Activity
     }
 
     public void onEchoClick(View view) {
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) !=
-                                               PackageManager.PERMISSION_GRANTED) {
-            statusView.setText(getString(R.string.status_record_perm));
-            ActivityCompat.requestPermissions(
-                    this,
-                    new String[] { Manifest.permission.RECORD_AUDIO },
-                    AUDIO_ECHO_REQUEST);
-            return;
-        }
-        startEcho();
+       startEcho();
     }
 
     public void getLowLatencyParameters(View view) {
@@ -186,19 +166,9 @@ public class MainActivity extends Activity
                 Integer.parseInt(nativeSampleRate),
                 AudioFormat.CHANNEL_IN_MONO,
                 AudioFormat.ENCODING_PCM_16BIT);
-        supportRecording = true;
-        if (recBufSize == AudioRecord.ERROR ||
-            recBufSize == AudioRecord.ERROR_BAD_VALUE) {
-            supportRecording = false;
-        }
-    }
+   }
 
     private void updateNativeAudioUI() {
-        if (!supportRecording) {
-            statusView.setText(getString(R.string.error_no_mic));
-            controlButton.setEnabled(false);
-            return;
-        }
 
         statusView.setText("nativeSampleRate    = " + nativeSampleRate + "\n" +
                 "nativeSampleBufSize = " + nativeSampleBufSize + "\n");
@@ -227,45 +197,6 @@ public class MainActivity extends Activity
         setFilePath(file.getAbsolutePath());
     }
 
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions,
-                                           @NonNull int[] grantResults) {
-        /*
-         * if any permission failed, the sample could not play
-         */
-        if (AUDIO_ECHO_REQUEST != requestCode) {
-            super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-            return;
-        }
-
-        if (grantResults.length != 1  ||
-            grantResults[0] != PackageManager.PERMISSION_GRANTED) {
-            /*
-             * When user denied permission, throw a Toast to prompt that RECORD_AUDIO
-             * is necessary; also display the status on UI
-             * Then application goes back to the original state: it behaves as if the button
-             * was not clicked. The assumption is that user will re-click the "start" button
-             * (to retry), or shutdown the app in normal way.
-             */
-            statusView.setText(getString(R.string.error_no_permission));
-            Toast.makeText(getApplicationContext(),
-                    getString(R.string.prompt_permission),
-                    Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        /*
-         * When permissions are granted, we prompt the user the status. User would
-         * re-try the "start" button to perform the normal operation. This saves us the extra
-         * logic in code for async processing of the button listener.
-         */
-        statusView.setText("RECORD_AUDIO permission granted, touch " +
-                           getString(R.string.StartEcho) + " to begin");
-
-        // The callback runs on app's thread, so we are safe to resume the action
-        startEcho();
-    }
-
     /*
      * Loading our Libs
      */
@@ -282,8 +213,6 @@ public class MainActivity extends Activity
     public static native boolean createSLBufferQueueAudioPlayer();
     public static native void deleteSLBufferQueueAudioPlayer();
 
-    public static native boolean createAudioRecorder();
-    public static native void deleteAudioRecorder();
     public static native void startPlay();
     public static native void stopPlay();
 

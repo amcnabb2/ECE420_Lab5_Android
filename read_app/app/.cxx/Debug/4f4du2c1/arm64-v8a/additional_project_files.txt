@@ -54,6 +54,11 @@
 /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/CMakeFiles/NightlyTest.rule
 /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/CMakeFiles/NightlyUpdate
 /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/arm64-v8a/libsndfile/CMakeFiles/NightlyUpdate.rule
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/common.h
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/fastest_coeffs.h
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/high_qual_coeffs.h
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/src/mid_qual_coeffs.h
+/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2/include/samplerate.h
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfconfig.h
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sfendian.h
 /home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsndfile/src/sf_unistd.h

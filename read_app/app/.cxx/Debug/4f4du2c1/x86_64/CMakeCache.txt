@@ -45,7 +45,7 @@ BUILD_REGTEST:BOOL=OFF
 BUILD_SHARED_LIBS:BOOL=OFF
 
 //Build the testing tree.
-BUILD_TESTING:BOOL=ON
+BUILD_TESTING:BOOL=OFF
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line
@@ -317,8 +317,8 @@ CMAKE_SYSTEM_NAME:UNINITIALIZED=Android
 //No help, variable specified on the command line.
 CMAKE_SYSTEM_VERSION:UNINITIALIZED=28
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/eonuf/Android/Sdk/ndk/26.1.10909125/build/cmake/android.toolchain.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/eonuf/Android/Sdk/ndk/26.1.10909125/build/cmake/android.toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -381,6 +381,12 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
+//Target processor clips on negative float to int conversion
+CPU_CLIPS_NEGATIVE:BOOL=FALSE
+
+//Target processor clips on positive float to int conversion
+CPU_CLIPS_POSITIVE:BOOL=FALSE
+
 //How many times to retry timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_COUNT:STRING=3
 
@@ -420,8 +426,35 @@ INSTALL_MANPAGES:BOOL=ON
 //Generate and install pkg-config module
 INSTALL_PKGCONFIG_MODULE:BOOL=ON
 
+//Use old dll name on Windows platform
+LIBSAMPLERATE_COMPATIBLE_NAME:BOOL=OFF
+
+//Enable ASAN and UBSAN
+LIBSAMPLERATE_ENABLE_SANITIZERS:BOOL=OFF
+
+//Enable Best Sinc Interpolator converter
+LIBSAMPLERATE_ENABLE_SINC_BEST_CONVERTER:BOOL=ON
+
+//Enable Fastest Sinc Interpolator converter
+LIBSAMPLERATE_ENABLE_SINC_FAST_CONVERTER:BOOL=ON
+
+//Enable Medium Sinc Interpolator converter
+LIBSAMPLERATE_ENABLE_SINC_MEDIUM_CONVERTER:BOOL=ON
+
+//Enable to generate examples
+LIBSAMPLERATE_EXAMPLES:BOOL=OFF
+
+//Enable to add install directives
+LIBSAMPLERATE_INSTALL:BOOL=OFF
+
+//Install samplerate.pc PkgConfig module.
+LIBSAMPLERATE_INSTALL_PKGCONFIG_MODULE:BOOL=ON
+
 //Command to build the project
 MAKECOMMAND:STRING=/home/eonuf/Android/Sdk/cmake/3.22.1/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+
+//Path to a library.
+MATH_LIBRARY:FILEPATH=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/libm.so
 
 //Path to the memory checking command, used for memory error detection.
 MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
@@ -496,7 +529,16 @@ Vorbis_Vorbis_INCLUDE_DIR:PATH=Vorbis_Vorbis_INCLUDE_DIR-NOTFOUND
 Vorbis_Vorbis_LIBRARY:FILEPATH=Vorbis_Vorbis_LIBRARY-NOTFOUND
 
 //Dependencies for the target
-echo_LIB_DEPENDS:STATIC=general;android;general;atomic;general;log;general;OpenSLES;general;sndfile;
+echo_LIB_DEPENDS:STATIC=general;android;general;atomic;general;log;general;OpenSLES;general;sndfile;general;samplerate;
+
+//Value Computed by CMake
+libsamplerate_BINARY_DIR:STATIC=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/libsamplerate-0.2.2
+
+//Value Computed by CMake
+libsamplerate_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+libsamplerate_SOURCE_DIR:STATIC=/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp/libsamplerate-0.2.2
 
 //Value Computed by CMake
 libsndfile_BINARY_DIR:STATIC=/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86_64/libsndfile
@@ -521,6 +563,9 @@ read_app_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 read_app_SOURCE_DIR:STATIC=/home/eonuf/ece420/project/file_read/read_app/app/src/main/cpp
+
+//Dependencies for the target
+samplerate_LIB_DEPENDS:STATIC=general;/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/28/libm.so;general;m;
 
 
 ########################
@@ -659,7 +704,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -746,6 +791,8 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v2.5.1()]
 //ADVANCED property for variable: FLAC_INCLUDE_DIR
 FLAC_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: FLAC_LIBRARY
@@ -808,6 +855,8 @@ HAVE_SIZEOF_OFF_T:INTERNAL=TRUE
 HAVE_SIZEOF_SSIZE_T:INTERNAL=TRUE
 //Have library sqlite3
 HAVE_SQLITE3:INTERNAL=
+//Have include stdbool.h
+HAVE_STDBOOL_H:INTERNAL=1
 //Have include stddef.h
 HAVE_STDDEF_H:INTERNAL=1
 //Have include stdint.h
@@ -820,6 +869,8 @@ HAVE_SYS_TYPES_H:INTERNAL=1
 HAVE_SYS_WAIT_H:INTERNAL=1
 //Have include unistd.h
 HAVE_UNISTD_H:INTERNAL=1
+//Test HAVE_VISIBILITY
+HAVE_VISIBILITY:INTERNAL=1
 //Have function waitpid
 HAVE_WAITPID:INTERNAL=1
 //Have function write

@@ -8,13 +8,14 @@ add_library(echo SHARED
             audio_common.cpp
             audio_main.cpp
             audio_player.cpp
-            audio_recorder.cpp
             debug_utils.cpp
             kiss_fft/kiss_fft.c
             ece420_lib.cpp
             ece420_main.cpp)
 
 add_subdirectory(libsndfile)
+set(BUILD_TESTING OFF CACHE BOOL "" FORCE)
+add_subdirectory(libsamplerate-0.2.2)
 
 # include libraries needed for echo lib
 target_link_libraries(echo
@@ -22,7 +23,8 @@ target_link_libraries(echo
                       atomic
                       log
                       OpenSLES
-                      sndfile)
+                      sndfile
+                      samplerate)
 
 # Android Studio 2.2.0 with CMake support does not pack stl shared libraries,
 # so app needs to pack the right shared lib into APK. This sample uses solution

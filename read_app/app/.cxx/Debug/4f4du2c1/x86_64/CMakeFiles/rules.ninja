@@ -1151,6 +1151,25 @@ rule C_EXECUTABLE_LINKER__g72x_test_Debug
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__samplerate_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=x86_64-none-linux-android28 --sysroot=/home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C static library.
+
+rule C_STATIC_LIBRARY_LINKER__samplerate_Debug
+  command = $PRE_LINK && /home/eonuf/Android/Sdk/cmake/3.22.1/bin/cmake -E rm -f $TARGET_FILE && /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ar qc $TARGET_FILE $LINK_FLAGS $in && /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-ranlib $TARGET_FILE && $POST_BUILD
+  description = Linking C static library $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

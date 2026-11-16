@@ -545,3 +545,24 @@ Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_c674c &
 
 Source file was:
 int main(void) { return 0; }
+Determining if the include file stdbool.h exists passed with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_eb296 && [1/2] Building C object CMakeFiles/cmTC_eb296.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_eb296
+
+
+
+Performing C SOURCE FILE Test HAVE_VISIBILITY succeeded with the following output:
+Change Dir: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/eonuf/Android/Sdk/cmake/3.22.1/bin/ninja cmTC_ddadb && [1/2] Building C object CMakeFiles/cmTC_ddadb.dir/src.c.o
+[2/2] Linking C executable cmTC_ddadb
+
+
+Source file was:
+__attribute__((visibility("default"))) int foo(void);
+                         __attribute__((visibility("hidden")))  int bar(void);
+                         int foo (void) {return 0;}
+                         int bar (void) {return 1;}
+                         int main(void) {return 0;}

@@ -45,6 +45,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsndfile/cmake_install.cmake")
+  include("/home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/x86/libsamplerate-0.2.2/cmake_install.cmake")
 
 endif()
 

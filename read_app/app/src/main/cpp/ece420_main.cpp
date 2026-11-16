@@ -8,6 +8,7 @@
 #include "ece420_lib.h"
 #include "kiss_fft/kiss_fft.h"
 #include <sndfile.h>
+#include <samplerate.h>
 #include <string.h>
 
 // JNI Function
@@ -57,7 +58,7 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
     gettimeofday(&start, NULL);
 
 //     Get the new gain from android
-    PCT_GAIN = GAIN_NEW_ANDROID / 100;
+    PCT_GAIN = (float) GAIN_NEW_ANDROID / 100.0f;
 
     if (!isOpen && strlen(infilename) > 0) {
         memset (&sfinfo, 0, sizeof (sfinfo));
@@ -71,13 +72,13 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
 
     // Data is encoded in signed PCM-16, little-endian, mono
     int16_t readdata[FRAME_SIZE*MAX_CHANNELS]; // can hold FRAME_LENGTH samples of multiple channels
-    int16_t monodata[FRAME_SIZE]; // will hold mono-summed audio
+    int16_t monodata[FRAME_SIZE] = {0}; // will hold mono-summed audio
 
-    readcount = sf_read_short(infile, readdata, READLENGTH);
-    process_data(readdata, monodata, readcount, sfinfo.channels);
+    readcount = sf_readf_short(infile, readdata, FRAME_SIZE);
+    process_data(readdata, monodata, readcount*sfinfo.channels, sfinfo.channels);
 
     for (int i = 0; i < FRAME_SIZE; i++) {
-        int16_t newVal = (int16_t) bufferOut[i];
+        int16_t newVal = (int16_t) monodata[i];
 
         uint8_t lowByte = (uint8_t) (0x00ff & newVal);
         uint8_t highByte = (uint8_t) ((0xff00 & newVal) >> 8);
@@ -108,21 +109,35 @@ void ece420ProcessFrame(sample_buf *dataBuf) {
     LOGD("Time delay: %ld us",  ((end.tv_sec * 1000000 + end.tv_usec) - (start.tv_sec * 1000000 + start.tv_usec)));
 }
 
-static void process_data (int16_t *datain, int16_t *dataout, int count, int channels)
-{
-    int k;
-    int framesum = 0;
+//static void process_data (int16_t *datain, int16_t *dataout, int count, int channels)
+//{
+//    int k;
+//    int framesum = 0;
+//
+//    // convert to mono
+//    for (int i = 0 ; i < count; i++){
+//        framesum += datain[i] / channels;
+//        k = i%channels;
+//        if (k == channels-1){ // all channels have been read
+//            dataout[i/(channels)] = (int16_t) (PCT_GAIN * framesum); // put summation in matching position in dataout; PCT_GAIN/100 converts from percentage to scaling value
+//            framesum = 0;
+//        }
+//    }
+//} /* process_data */
 
-    // convert to mono
-    for (int i = 0 ; i < count; i++){
-        framesum += datain[i] / channels;
-        k = i%channels;
-        if (k == channels-1){ // all channels have been read
-            dataout[i%channels] = PCT_GAIN / 100 * framesum; // put summation in matching position in dataout; PCT_GAIN/100 converts from percentage to scaling value
-            framesum = 0;
+static void process_data(int16_t *datain, int16_t *dataout, int frame_count, int channels)
+{
+    if (channels <= 0 || datain == NULL || dataout == NULL) return;
+
+    for (int f = 0; f < frame_count; f++) {
+        int32_t framesum = 0;
+        for (int c = 0; c < channels; c++) {
+            framesum += datain[f * channels + c];
         }
+        int32_t avg = framesum / channels;
+        dataout[f] = (int16_t)(PCT_GAIN * avg); // Correct mono conversion & gain
     }
-} /* process_data */
+}
 
 void overlapAddArray(float *dest, float *src, int startIdx, int len) {
     int idxLow = startIdx;
@@ -143,13 +158,11 @@ void overlapAddArray(float *dest, float *src, int startIdx, int len) {
     }
 }
 
-
 JNIEXPORT void JNICALL
 Java_com_ece420_lab5_MainActivity_writeNewFreq(JNIEnv *env, jclass, jint newFreq) {
     GAIN_NEW_ANDROID = (int) newFreq;
     return;
 }
-
 
 extern "C" {
 JNIEXPORT void JNICALL

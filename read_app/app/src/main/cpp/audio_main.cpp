@@ -33,10 +33,8 @@ struct EchoAudioEngine {
     SLObjectItf  slEngineObj_;
     SLEngineItf  slEngineItf_;
 
-    AudioRecorder  *recorder_;
     AudioPlayer    *player_;
     AudioQueue     *freeBufQueue_;    //Owner of the queue
-    AudioQueue     *recBufQueue_;     //Owner of the queue
 
     sample_buf  *bufs_;
     uint32_t     bufCount_;
@@ -100,8 +98,7 @@ Java_com_ece420_lab5_MainActivity_createSLEngine(
     assert(engine.bufs_);
 
     engine.freeBufQueue_ = new AudioQueue (engine.bufCount_);
-    engine.recBufQueue_  = new AudioQueue (engine.bufCount_);
-    assert(engine.freeBufQueue_ && engine.recBufQueue_);
+    assert(engine.freeBufQueue_);
     for(uint32_t i=0; i<engine.bufCount_; i++) {
         engine.freeBufQueue_->push(&engine.bufs_[i]);
     }
@@ -123,7 +120,7 @@ Java_com_ece420_lab5_MainActivity_createSLBufferQueueAudioPlayer(JNIEnv *env, jc
     if(engine.player_ == nullptr)
         return JNI_FALSE;
 
-    engine.player_->SetBufQueue(engine.recBufQueue_, engine.freeBufQueue_);
+    engine.player_->SetBufQueue(engine.freeBufQueue_);
     engine.player_->RegisterCallback(EngineService, (void*)&engine);
 
     return JNI_TRUE;
@@ -137,33 +134,6 @@ Java_com_ece420_lab5_MainActivity_deleteSLBufferQueueAudioPlayer(JNIEnv *env, jc
     }
 }
 
-JNIEXPORT jboolean JNICALL
-Java_com_ece420_lab5_MainActivity_createAudioRecorder(JNIEnv *env, jclass type) {
-    SampleFormat sampleFormat;
-    memset(&sampleFormat, 0, sizeof(sampleFormat));
-    sampleFormat.pcmFormat_ = static_cast<uint16_t>(engine.bitsPerSample_);
-
-    // SampleFormat.representation_ = SL_ANDROID_PCM_REPRESENTATION_SIGNED_INT;
-    sampleFormat.channels_ = engine.sampleChannels_;
-    sampleFormat.sampleRate_ = engine.fastPathSampleRate_;
-    sampleFormat.framesPerBuf_ = engine.fastPathFramesPerBuf_;
-    engine.recorder_ = new AudioRecorder(&sampleFormat, engine.slEngineItf_);
-    if(!engine.recorder_) {
-        return JNI_FALSE;
-    }
-    engine.recorder_->SetBufQueues(engine.freeBufQueue_, engine.recBufQueue_);
-    engine.recorder_->RegisterCallback(EngineService, (void*)&engine);
-    return JNI_TRUE;
-}
-
-JNIEXPORT void JNICALL
-Java_com_ece420_lab5_MainActivity_deleteAudioRecorder(JNIEnv *env, jclass type) {
-    if(engine.recorder_)
-        delete engine.recorder_;
-
-    engine.recorder_ = nullptr;
-}
-
 JNIEXPORT void JNICALL
 Java_com_ece420_lab5_MainActivity_startPlay(JNIEnv *env, jclass type) {
 
@@ -175,23 +145,18 @@ Java_com_ece420_lab5_MainActivity_startPlay(JNIEnv *env, jclass type) {
         LOGE("====%s failed", __FUNCTION__);
         return;
     }
-    engine.recorder_->Start();
 }
 
 JNIEXPORT void JNICALL
 Java_com_ece420_lab5_MainActivity_stopPlay(JNIEnv *env, jclass type) {
-    engine.recorder_->Stop();
     engine.player_ ->Stop();
 
-    delete engine.recorder_;
     delete engine.player_;
-    engine.recorder_ = NULL;
     engine.player_ = NULL;
 }
 
 JNIEXPORT void JNICALL
 Java_com_ece420_lab5_MainActivity_deleteSLEngine(JNIEnv *env, jclass type) {
-    delete engine.recBufQueue_;
     delete engine.freeBufQueue_;
     releaseSampleBufs(engine.bufs_, engine.bufCount_);
     if (engine.slEngineObj_ != NULL) {
@@ -203,16 +168,13 @@ Java_com_ece420_lab5_MainActivity_deleteSLEngine(JNIEnv *env, jclass type) {
 
 uint32_t dbgEngineGetBufCount(void) {
     uint32_t count = engine.player_->dbgGetDevBufCount();
-    count += engine.recorder_->dbgGetDevBufCount();
     count += engine.freeBufQueue_->size();
-    count += engine.recBufQueue_->size();
 
-    LOGE("Buf Disrtibutions: PlayerDev=%d, RecDev=%d, FreeQ=%d, "
-                 "RecQ=%d",
+    LOGE("Buf Distributions: PlayerDev=%d, FreeQ=%d, "
+                ,
          engine.player_->dbgGetDevBufCount(),
-         engine.recorder_->dbgGetDevBufCount(),
-         engine.freeBufQueue_->size(),
-         engine.recBufQueue_->size());
+         engine.freeBufQueue_->size());
+
     if(count != engine.bufCount_) {
         LOGE("====Lost Bufs among the queue(supposed = %d, found = %d)",
              BUF_COUNT, count);

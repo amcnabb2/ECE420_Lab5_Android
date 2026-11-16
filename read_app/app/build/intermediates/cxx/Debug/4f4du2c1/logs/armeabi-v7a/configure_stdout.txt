@@ -1,37 +1,3 @@
--- The C compiler identification is Clang 17.0.2
--- The CXX compiler identification is Clang 17.0.2
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Check for working C compiler: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang - skipped
--- Detecting C compile features
--- Detecting C compile features - done
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Check for working CXX compiler: /home/eonuf/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ - skipped
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- 
--- 
--- Checking large files support...
--- 
--- Looking for sys/types.h
--- Looking for sys/types.h - found
--- Looking for stdint.h
--- Looking for stdint.h - found
--- Looking for stddef.h
--- Looking for stddef.h - found
--- 
--- Checking size of off_t without any definitions:
--- Check size of off_t
--- Check size of off_t - done
--- Checking of off_t without any definitions: 4
--- 
--- Checking size of off_t with _FILE_OFFSET_BITS=64:
--- Check size of off_t
--- Check size of off_t - done
--- Checking size of off_t with _FILE_OFFSET_BITS=64: 8
--- 
--- Result of checking large files support: supported
 -- Could NOT find ALSA (missing: ALSA_LIBRARY ALSA_INCLUDE_DIR) 
 -- Could NOT find Sndio (missing: SNDIO_LIBRARY SNDIO_INCLUDE_DIR) 
 -- Could NOT find Ogg (missing: OGG_LIBRARY OGG_INCLUDE_DIR) (Required is at least version "1.3")
@@ -42,72 +8,6 @@
 -- Could NOT find mpg123 (missing: mpg123_LIBRARY mpg123_INCLUDE_DIR) (Required is at least version "1.25.10")
 -- Could NOT find Speex (missing: SPEEX_LIBRARY SPEEX_INCLUDE_DIR) 
 -- Could NOT find SQLite3 (missing: SQLite3_INCLUDE_DIR SQLite3_LIBRARY) 
--- Looking for byteswap.h
--- Looking for byteswap.h - found
--- Looking for dlfcn.h
--- Looking for dlfcn.h - found
--- Looking for direct.h
--- Looking for direct.h - not found
--- Looking for endian.h
--- Looking for endian.h - found
--- Looking for io.h
--- Looking for io.h - not found
--- Looking for sys/time.h
--- Looking for sys/time.h - found
--- Looking for unistd.h
--- Looking for unistd.h - found
--- Looking for immintrin.h
--- Looking for immintrin.h - not found
--- Check CPU architecture is x86
--- Check CPU architecture is x86 - no
--- Check CPU architecture is x64
--- Check CPU architecture is x64 - no
--- Looking for locale.h
--- Looking for locale.h - found
--- Looking for sys/wait.h
--- Looking for sys/wait.h - found
--- Check size of ssize_t
--- Check size of ssize_t - done
--- Looking for floor in m
--- Looking for floor in m - found
--- Looking for sqlite3_close in sqlite3
--- Looking for sqlite3_close in sqlite3 - not found
--- Looking for fstat
--- Looking for fstat - found
--- Looking for fstat64
--- Looking for fstat64 - found
--- Looking for gettimeofday
--- Looking for gettimeofday - found
--- Looking for gmtime
--- Looking for gmtime - found
--- Looking for gmtime_r
--- Looking for gmtime_r - found
--- Looking for localtime
--- Looking for localtime - found
--- Looking for localtime_r
--- Looking for localtime_r - found
--- Looking for lseek
--- Looking for lseek - found
--- Looking for open
--- Looking for open - found
--- Looking for read
--- Looking for read - found
--- Looking for write
--- Looking for write - found
--- Looking for ftruncate
--- Looking for ftruncate - found
--- Looking for fsync
--- Looking for fsync - found
--- Looking for pipe
--- Looking for pipe - found
--- Looking for setlocale
--- Looking for setlocale - found
--- Looking for waitpid
--- Looking for waitpid - found
--- Looking for S_IRGRP
--- Looking for S_IRGRP - found
--- Checking for inline...
--- Checking for inline... supported
 -- The following features have been enabled:
 
  * BUILD_TESTING, build tests
@@ -146,6 +46,13 @@
  * mpg123 (required version >= 1.25.10), MPEG Audio Layer I/II/III decoder, <https://www.mpg123.de/>
    Enables MPEG Audio reading support
 
+-- Looking for stdbool.h
+-- Looking for stdbool.h - found
+-- Found PkgConfig: /usr/bin/pkg-config (found version "2.5.1") 
+-- Checking processor clipping capabilities...
+-- Checking processor clipping capabilities... disabled
+-- Performing Test HAVE_VISIBILITY
+-- Performing Test HAVE_VISIBILITY - Success
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/eonuf/ece420/project/file_read/read_app/app/.cxx/Debug/4f4du2c1/armeabi-v7a
