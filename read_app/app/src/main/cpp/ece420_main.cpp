@@ -18,8 +18,6 @@ Java_com_ece420_lab5_MainActivity_writeNewFreq(JNIEnv *env, jclass, jint);
 }
 
 // Student Variables
-#define EPOCH_PEAK_REGION_WIGGLE 30
-#define VOICED_THRESHOLD 200000000
 #define FRAME_SIZE 1024
 #define BUFFER_SIZE (3 * FRAME_SIZE)
 #define F_S 48000
@@ -137,24 +135,10 @@ static void process_data (int16_t *datain, int16_t *dataout, int count, int chan
         for (int c = 0 ; c < channels; c++) { // channels in frame
             framesum += datain[i*channels + c];
         }
-        dataout[i] = framesum / channels;
+        dataout[i] = framesum / channels * PCT_GAIN;
         framesum = 0;
     }
 } /* process_data */
-
-//static void process_data(int16_t *datain, int16_t *dataout, int frame_count, int channels)
-//{
-//    if (channels <= 0 || datain == NULL || dataout == NULL) return;
-//
-//    for (int f = 0; f < frame_count; f++) {
-//        int32_t framesum = 0;
-//        for (int c = 0; c < channels; c++) {
-//            framesum += datain[f * channels + c];
-//        }
-//        int32_t avg = framesum / channels;
-//        dataout[f] = (int16_t)(PCT_GAIN * avg); // Correct mono conversion & gain
-//    }
-//}
 
 void close_file(){
     sf_close(infile);
